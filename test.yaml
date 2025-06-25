@@ -2,13 +2,3 @@ elements:
   - id: tonometr_block
     metric: tonometr
     text: 'Тонометр: ${tonometr}'
-  - id: termometr_block
-    metric: termometr
-
-styles:
-  - selector: '#tonometr_block'
-    style:
-      fill: ${tonometr > 0 ? '#FF5733' : '#2ECC71'}
-  - selector: '#termometr_block'
-    style:
-      fill: ${termometr > 0 ? '#FF5733' : '#2ECC71'}
