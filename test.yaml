@@ -7,26 +7,15 @@ cells:
     dataRef: "tonometr_value"  # Метрика из первого SQL-запроса
     label:
       separator: "space"
-      text: "Тонометр: ${tonometr_value}"
       decimalPoints: 0
       units: "none"
       labelColor:
         color: "white"
-    fillColor:
-      thresholds:
-        - {color: "green", level: 0}
-        - {color: "red", level: 1}
   termometr_block:  # Блок термометра
     dataRef: "termometr_value"  # Метрика из второго SQL-запроса
     label:
       separator: "space"
-      text: "Термометр: ${termometr_value}"
       decimalPoints: 0
       units: "none"
       labelColor:
         color: "white"
-    fillColor:
-      thresholds:
-        - {color: "blue", level: 0}
-        - {color: "orange", level: 5}
-        - {color: "red", level: 10}
