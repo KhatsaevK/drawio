@@ -13,7 +13,7 @@ cells:
       decimalPoints: 0  # Без десятичных знаков
       units: "none"  # Без единиц измерения
       labelColor:
-      color: "white"  # Белый цвет текста
+        color: "white"  # Белый цвет текста
 
     # Настройка цвета (опционально)
     fillColor:
