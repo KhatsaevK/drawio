@@ -3,38 +3,31 @@
 # Связывает элемент draw.io (tonometr_blok) с SQL-запросом
 cellIdPreamble: "cell-"
 cells:
-  tonometr_block:  # ID элемента из draw.io (должен совпадать!)
-    dataRef: "tonometr"  # Название метрики из SQL-запроса
-    
-    # Настройка текста
+  tonometr_blok:  # Блок тонометра
+    dataRef: "tonometr_value"  # Метрика из первого SQL-запроса
     label:
-      separator: "space"  # Разделитель между статичным текстом и значением
-      text: "Тонометр: ${tonometr}"  # Текст + подстановка значения
-      decimalPoints: 0  # Без десятичных знаков
-      units: "none"  # Без единиц измерения
+      separator: "space"
+      text: "Тонометр: ${tonometr_value}"
+      decimalPoints: 0
+      units: "none"
       labelColor:
-        color: "white"  # Белый цвет текста
-
-    # Настройка цвета (опционально)
+        color: "white"
     fillColor:
       thresholds:
-        - {color: "green", level: 0}  # Зелёный, если значение >= 0
-        - {color: "red", level: 1}    # Красный, если значение >= 1
-        
-    termometr_block:  # ID элемента из draw.io (должен совпадать!)
-      dataRef: "termometr"  # Название метрики из SQL-запроса
-    
-    # Настройка текста
-      label:
-        separator: "space"  # Разделитель между статичным текстом и значением
-        text: "Термометр: ${termometr}"  # Текст + подстановка значения
-        decimalPoints: 0  # Без десятичных знаков
-        units: "none"  # Без единиц измерения
-        labelColor:
-          color: "white"  # Белый цвет текста
+        - {color: "green", level: 0}
+        - {color: "red", level: 1}
 
-    # Настройка цвета (опционально)
-      fillColor:
-        thresholds:
-          - {color: "red", level: 0}  # Зелёный, если значение >= 0
-          - {color: "yellow", level: 1}    # Желтый, если значение >= 1
+  termometr_block:  # Блок термометра
+    dataRef: "termometr_value"  # Метрика из второго SQL-запроса
+    label:
+      separator: "space"
+      text: "Термометр: ${termometr_value}"
+      decimalPoints: 0
+      units: "none"
+      labelColor:
+        color: "white"
+    fillColor:
+      thresholds:
+        - {color: "blue", level: 0}
+        - {color: "orange", level: 5}
+        - {color: "red", level: 10}
