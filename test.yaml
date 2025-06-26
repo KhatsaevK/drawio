@@ -3,7 +3,7 @@
 # Связывает элемент draw.io (tonometr_blok) с SQL-запросом
 
 cells:
-  tonometr_blok:  # ID элемента из draw.io (должен совпадать!)
+  tonometr_block:  # ID элемента из draw.io (должен совпадать!)
     dataRef: "tonometr"  # Название метрики из SQL-запроса
     
     # Настройка текста
