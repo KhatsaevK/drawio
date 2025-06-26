@@ -16,7 +16,6 @@ cells:
       thresholds:
         - {color: "green", level: 0}
         - {color: "red", level: 1}
-
   termometr_block:  # Блок термометра
     dataRef: "termometr_value"  # Метрика из второго SQL-запроса
     label:
