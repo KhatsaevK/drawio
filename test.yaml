@@ -3,7 +3,7 @@
 # Связывает элемент draw.io (tonometr_blok) с SQL-запросом
 cellIdPreamble: "cell-"
 cells:
-  tonometr_blok:  # Блок тонометра
+  tonometr_block:  # Блок тонометра
     dataRef: "tonometr_value"  # Метрика из первого SQL-запроса
     label:
       separator: "space"
@@ -11,11 +11,11 @@ cells:
       units: "none"
       labelColor:
         color: "white"
-  # termometr_block:  # Блок термометра
-  #   dataRef: "termometr_value"  # Метрика из второго SQL-запроса
-  #   label:
-  #     separator: "space"
-  #     decimalPoints: 0
-  #     units: "none"
-  #     labelColor:
-  #       color: "white"
+  termometr_block:  # Блок термометра
+    dataRef: "termometr_value"  # Метрика из второго SQL-запроса
+    label:
+     separator: "space"
+     decimalPoints: 0
+     units: "none"
+     labelColor:
+       color: "white"
