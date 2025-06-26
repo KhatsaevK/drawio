@@ -11,35 +11,35 @@ cells:
       units: "none"
       labelColor:
         color: "white"
-  termometr_block:  # Блок термометра
-    dataRef: "termometr_value"  # Метрика из второго SQL-запроса
-    label:
-     separator: "space"
-     decimalPoints: 0
-     units: "none"
-     labelColor:
-       color: "white"
-   internet_block:  # Блок термометра
-    dataRef: "internet_value"  # Метрика из второго SQL-запроса
-    label:
-     separator: "space"
-     decimalPoints: 0
-     units: "none"
-     labelColor:
-       color: "white"
-  printer_block:  # Блок термометра
-    dataRef: "printer_value"  # Метрика из второго SQL-запроса
-    label:
-     separator: "space"
-     decimalPoints: 0
-     units: "none"
-     labelColor:
-       color: "white"
-  not_start_block:  # Блок термометра
-    dataRef: "not_start_value"  # Метрика из второго SQL-запроса
-    label:
-     separator: "space"
-     decimalPoints: 0
-     units: "none"
-     labelColor:
-       color: "white"
+#  termometr_block:  # Блок термометра
+#    dataRef: "termometr_value"  # Метрика из второго SQL-запроса
+#    label:
+#     separator: "space"
+#     decimalPoints: 0
+#     units: "none"
+#     labelColor:
+#       color: "white"
+#   internet_block:  # Блок термометра
+#    dataRef: "internet_value"  # Метрика из второго SQL-запроса
+#    label:
+#     separator: "space"
+#     decimalPoints: 0
+#     units: "none"
+#     labelColor:
+#       color: "white"
+#  printer_block:  # Блок термометра
+#    dataRef: "printer_value"  # Метрика из второго SQL-запроса
+#    label:
+#     separator: "space"
+#     decimalPoints: 0
+#     units: "none"
+#     labelColor:
+#       color: "white"
+#  not_start_block:  # Блок термометра
+#    dataRef: "not_start_value"  # Метрика из второго SQL-запроса
+#    label:
+#     separator: "space"
+#     decimalPoints: 0
+#     units: "none"
+#     labelColor:
+#       color: "white"
