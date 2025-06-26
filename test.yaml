@@ -1,4 +1,20 @@
-elements:
-  - id: tonometr_block
-    metric: tonometr
-    text: 'wregwrgwt: ${tonometr}'
+#------------------------------------------------------------------------------
+# Конфиг для Flowcharting в Grafana
+# Связывает элемент draw.io (tonometr_blok) с SQL-запросом
+
+cells:
+  tonometr_blok:  # ID элемента из draw.io (должен совпадать!)
+    dataRef: "tonometr"  # Название метрики из SQL-запроса
+    
+    # Настройка текста
+    label:
+      separator: "space"  # Разделитель между статичным текстом и значением
+      text: "Тонометр: ${tonometr}"  # Текст + подстановка значения
+      decimalPoints: 0  # Без десятичных знаков
+      units: "none"  # Без единиц измерения
+
+    # Настройка цвета (опционально)
+    fillColor:
+      thresholds:
+        - {color: "green", level: 0}  # Зелёный, если значение >= 0
+        - {color: "red", level: 1}    # Красный, если значение >= 1
