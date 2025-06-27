@@ -4,7 +4,7 @@
 cellIdPreamble: "cell-"
 cells:
   tonometr_block:  # Блок тонометра
-    dataRef: "tonometr_value"  # Метрика из первого SQL-запроса
+    dataRef: "tonometr_value"  # Метрика из SQL-запроса
     label:
       separator: "space"
       decimalPoints: 0
@@ -12,7 +12,7 @@ cells:
       labelColor:
         color: "white"
   termometr_block:  # Блок термометра
-    dataRef: "termometr_value"  # Метрика из второго SQL-запроса
+    dataRef: "termometr_value"  # Метрика из SQL-запроса
     label:
      separator: "space"
      decimalPoints: 0
@@ -20,7 +20,7 @@ cells:
      labelColor:
        color: "white"
   internet_block:  # Блок термометра
-    dataRef: "internet_value"  # Метрика из второго SQL-запроса
+    dataRef: "internet_value"  # Метрика из SQL-запроса
     label:
      separator: "space"
      decimalPoints: 0
@@ -28,7 +28,7 @@ cells:
      labelColor:
        color: "white"
   printer_block:  # Блок термометра
-    dataRef: "printer_value"  # Метрика из второго SQL-запроса
+    dataRef: "printer_value"  # Метрика из SQL-запроса
     label:
      separator: "space"
      decimalPoints: 0
@@ -36,10 +36,74 @@ cells:
      labelColor:
        color: "white"
   not_start_block:  # Блок термометра
-    dataRef: "not_start_value"  # Метрика из второго SQL-запроса
+    dataRef: "not_start_value"  # Метрика из SQL-запроса
     label:
      separator: "space"
      decimalPoints: 0
      nits: "none"
      labelColor:
        color: "white"
+  internal_requests_block:  # Блок внутренние заявки
+    dataRef: "internal_value"  # Метрика из SQL-запроса
+    label:
+     separator: "space"
+     decimalPoints: 0
+     nits: "none"
+     labelColor:
+       color: "white"
+  planned_preventive_maintenance_block: # Блок планово профилактические работы
+    dataRef: "preventive_value"  # Метрика из SQL-запроса
+    label:
+     separator: "space"
+     decimalPoints: 0
+     nits: "none"
+     labelColor:
+       color: "white"
+  zabbix_block: # Блок заббикс
+    dataRef: "preventive_value"  # Метрика из SQL-запроса
+    label:
+     separator: "space"
+     decimalPoints: 0
+     nits: "none"
+     labelColor:
+       color: "white"
+  malfunction_block: # Блок нарушение в работе комплекса
+    dataRef: "malfunction_value"  # Метрика из SQL-запроса
+    label:
+      separator: "space"
+      decimalPoints: 0
+      nits: "none"
+      labelColor:
+        color: "white"
+  reception_other_block: # Блок Reception (Остальное)
+    dataRef: "reception_value"  # Метрика из SQL-запроса
+    label:
+      separator: "space"
+      decimalPoints: 0
+      nits: "none"
+      labelColor:
+        color: "white"
+  user_consultation_block: # Блок консультация пользователей
+    dataRef: "user_consultation_value"  # Метрика из SQL-запроса
+    label:
+      separator: "space"
+      decimalPoints: 0
+      nits: "none"
+      labelColor:
+        color: "white"
+  spam_block: # Блок спам
+    dataRef: "spam_value"  # Метрика из SQL-запроса
+    label:
+      separator: "space"
+      decimalPoints: 0
+      nits: "none"
+      labelColor:
+        color: "white"
+  system_administration_block: # администрирование системы
+    dataRef: "system_administration_value"  # Метрика из SQL-запроса
+    label:
+      separator: "space"
+      decimalPoints: 0
+      nits: "none"
+      labelColor:
+        color: "white"
