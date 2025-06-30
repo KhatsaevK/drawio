@@ -11,6 +11,7 @@ cells:
       units: "none"
       labelColor:
         color: "white"
+      style: "white-space: pre-wrap; word-wrap: break-word;"
   termometr_block:  # Блок термометра
     dataRef: "termometr_value"  # Метрика из SQL-запроса
     label:
@@ -19,6 +20,7 @@ cells:
      units: "none"
      labelColor:
        color: "white"
+     style: "white-space: pre-wrap; word-wrap: break-word;"
   internet_block:  # Блок термометра
     dataRef: "internet_value"  # Метрика из SQL-запроса
     label:
@@ -27,6 +29,7 @@ cells:
      units: "none"
      labelColor:
        color: "white"
+     style: "white-space: pre-wrap; word-wrap: break-word;"
   printer_block:  # Блок термометра
     dataRef: "printer_value"  # Метрика из SQL-запроса
     label:
@@ -35,6 +38,7 @@ cells:
      units: "none"
      labelColor:
        color: "white"
+     style: "white-space: pre-wrap; word-wrap: break-word;"
   not_start_block:  # Блок термометра
     dataRef: "not_start_value"  # Метрика из SQL-запроса
     label:
@@ -43,6 +47,7 @@ cells:
      nits: "none"
      labelColor:
        color: "white"
+     style: "white-space: pre-wrap; word-wrap: break-word;"
   internal_requests_block:  # Блок внутренние заявки
     dataRef: "internal_value"  # Метрика из SQL-запроса
     label:
@@ -51,6 +56,7 @@ cells:
      nits: "none"
      labelColor:
        color: "white"
+     style: "white-space: pre-wrap; word-wrap: break-word;"
   planned_preventive_maintenance_block: # Блок планово профилактические работы
     dataRef: "preventive_value"  # Метрика из SQL-запроса
     label:
@@ -59,6 +65,7 @@ cells:
      nits: "none"
      labelColor:
        color: "white"
+     style: "white-space: pre-wrap; word-wrap: break-word;"
   zabbix_block: # Блок заббикс
     dataRef: "preventive_value"  # Метрика из SQL-запроса
     label:
@@ -67,6 +74,7 @@ cells:
      nits: "none"
      labelColor:
        color: "white"
+     style: "white-space: pre-wrap; word-wrap: break-word;"
   malfunction_block: # Блок нарушение в работе комплекса
     dataRef: "malfunction_value"  # Метрика из SQL-запроса
     label:
@@ -75,6 +83,7 @@ cells:
       nits: "none"
       labelColor:
         color: "white"
+      style: "white-space: pre-wrap; word-wrap: break-word;"
   reception_other_block: # Блок Reception (Остальное)
     dataRef: "reception_value"  # Метрика из SQL-запроса
     label:
@@ -83,6 +92,7 @@ cells:
       nits: "none"
       labelColor:
         color: "white"
+      style: "white-space: pre-wrap; word-wrap: break-word;"
   user_consultation_block: # Блок консультация пользователей
     dataRef: "user_consultation_value"  # Метрика из SQL-запроса
     label:
@@ -91,6 +101,7 @@ cells:
       nits: "none"
       labelColor:
         color: "white"
+      style: "white-space: pre-wrap; word-wrap: break-word;"
   spam_block: # Блок спам
     dataRef: "spam_value"  # Метрика из SQL-запроса
     label:
@@ -99,6 +110,7 @@ cells:
       nits: "none"
       labelColor:
         color: "white"
+      style: "white-space: pre-wrap; word-wrap: break-word;"
   system_administration_block: # администрирование системы
     dataRef: "system_administration_value"  # Метрика из SQL-запроса
     label:
@@ -107,3 +119,4 @@ cells:
       nits: "none"
       labelColor:
         color: "white"
+      style: "white-space: pre-wrap; word-wrap: break-word;"
