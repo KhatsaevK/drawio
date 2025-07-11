@@ -1,0 +1,5 @@
+cells:
+  my_block:
+    dataRef: "my_value"
+    label:
+      text: "${my_value}"  # Основной текст берется из SVG
