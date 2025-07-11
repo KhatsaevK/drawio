@@ -1,104 +1,157 @@
 #------------------------------------------------------------------------------
-# Конфиг для Flowcharting в Grafana
-# Связывает элемент draw.io (tonometr_blok) с SQL-запросом
+# Конфиг для Flowcharting в Grafana с переносом текста
 cellIdPreamble: "cell-"
 cells:
-  tonometr_block:  # Блок тонометра
-    dataRef: "tonometr_value"  # Метрика из SQL-запроса
+  tonometr_block:
+    dataRef: "tonometr_value"
     label:
-      # separator: "space"
+      text: "Тонометр:\n${tonometr_value}"
       decimalPoints: 0
       units: "none"
       labelColor:
         color: "white"
-      # style: "white-space: pre-wrap; word-wrap: break-word;"
-  termometr_block:  # Блок термометра
-    dataRef: "termometr_value"  # Метрика из SQL-запроса
+      style: |
+        white-space: pre;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.3;
+
+  termometr_block:
+    dataRef: "termometr_value"
     label:
-     # separator: "space"
-     decimalPoints: 0
-     units: "none"
-     labelColor:
-       color: "white"
-     # style: "white-space: pre-wrap; word-wrap: break-word;"
-  internet_block:  # Блок интернета
-    dataRef: "internet_value"  # Метрика из SQL-запроса
-    label:
-     # separator: "space"
-     decimalPoints: 0
-     units: "none"
-     labelColor:
-       color: "white"
-     # style: "white-space: pre-wrap; word-wrap: break-word;"
-  printer_block:  # Блок принтера
-    dataRef: "printer_value"  # Метрика из SQL-запроса
-    label:
-     # separator: "space"
-     decimalPoints: 0
-     units: "none"
-     labelColor:
-       color: "white"
-     # style: "white-space: pre-wrap; word-wrap: break-word;"
-  internal_requests_block:  # Блок внутренние заявки
-    dataRef: "internal_value"  # Метрика из SQL-запроса
-    label:
-     # separator: "space"
-     decimalPoints: 0
-     nits: "none"
-     labelColor:
-       color: "white"
-     # style: "white-space: pre-wrap; word-wrap: break-word;"
-  planned_preventive_maintenance_block: # Блок планово профилактические работы ППР
-    dataRef: "preventive_value"  # Метрика из SQL-запроса
-    label:
-     # separator: "space"
-     decimalPoints: 0
-     nits: "none"
-     labelColor:
-       color: "white"
-     # style: "white-space: pre-wrap; word-wrap: break-word;"
-  other_block: # Блок Другое
-    dataRef: "other_value"  # Метрика из SQL-запроса
-    label:
-     # separator: "space"
-     decimalPoints: 0
-     nits: "none"
-     labelColor:
-       color: "white"
-     # style: "white-space: pre-wrap; word-wrap: break-word;"
-  malfunction_block: # Блок нарушение в работе комплекса
-    dataRef: "malfunction_value"  # Метрика из SQL-запроса
-    label:
-      # separator: "space"
+      text: "Термометр:\n${termometr_value}"
       decimalPoints: 0
-      nits: "none"
+      units: "none"
       labelColor:
         color: "white"
-      # style: "white-space: pre-wrap; word-wrap: break-word;"
-  replacement_block: # Замена одного или нескольких комплектующих в комплексе
-    dataRef: "replacement_value"  # Метрика из SQL-запроса
+      style: |
+        white-space: pre;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.3;
+
+  internet_block:
+    dataRef: "internet_value"
     label:
-      # separator: "space"
+      text: "Интернет:\n${internet_value}"
       decimalPoints: 0
-      nits: "none"
+      units: "none"
       labelColor:
         color: "white"
-      # style: "white-space: pre-wrap; word-wrap: break-word;"
-  delivery_block: # Доставка расходных материалов
-    dataRef: "delivery_value"  # Метрика из SQL-запроса
+      style: |
+        white-space: pre;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.3;
+
+  printer_block:
+    dataRef: "printer_value"
     label:
-      # separator: "space"
+      text: "Принтер:\n${printer_value}"
       decimalPoints: 0
-      nits: "none"
+      units: "none"
       labelColor:
         color: "white"
-      # style: "white-space: pre-wrap; word-wrap: break-word;"
-  transfer_block: # Блок Перенос комплекса
-    dataRef: "transfer_value"  # Метрика из SQL-запроса
+      style: |
+        white-space: pre;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.3;
+
+  internal_requests_block:
+    dataRef: "internal_value"
     label:
-      # separator: "space"
+      text: "Внутренние\nзаявки:\n${internal_value}"
       decimalPoints: 0
-      nits: "none"
+      units: "none"
       labelColor:
         color: "white"
-      # style: "white-space: pre-wrap; word-wrap: break-word;"
+      style: |
+        white-space: pre;
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.3;
+
+  planned_preventive_maintenance_block:
+    dataRef: "preventive_value"
+    label:
+      text: "Планово-\nпрофилактические\nработы:\n${preventive_value}"
+      decimalPoints: 0
+      units: "none"
+      labelColor:
+        color: "white"
+      style: |
+        white-space: pre;
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.3;
+
+  other_block:
+    dataRef: "other_value"
+    label:
+      text: "Другое:\n${other_value}"
+      decimalPoints: 0
+      units: "none"
+      labelColor:
+        color: "white"
+      style: |
+        white-space: pre;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.3;
+
+  malfunction_block:
+    dataRef: "malfunction_value"
+    label:
+      text: "Нарушение в\nработе комплекса:\n${malfunction_value}"
+      decimalPoints: 0
+      units: "none"
+      labelColor:
+        color: "white"
+      style: |
+        white-space: pre;
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.3;
+
+  replacement_block:
+    dataRef: "replacement_value"
+    label:
+      text: "Замена\nкомплектующих:\n${replacement_value}"
+      decimalPoints: 0
+      units: "none"
+      labelColor:
+        color: "white"
+      style: |
+        white-space: pre;
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.3;
+
+  delivery_block:
+    dataRef: "delivery_value"
+    label:
+      text: "Доставка\nматериалов:\n${delivery_value}"
+      decimalPoints: 0
+      units: "none"
+      labelColor:
+        color: "white"
+      style: |
+        white-space: pre;
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.3;
+
+  transfer_block:
+    dataRef: "transfer_value"
+    label:
+      text: "Перенос\nкомплекса:\n${transfer_value}"
+      decimalPoints: 0
+      units: "none"
+      labelColor:
+        color: "white"
+      style: |
+        white-space: pre;
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.3;
